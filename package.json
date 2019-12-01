@@ -1,0 +1,30 @@
+{
+  "name": "@cgfoundation/stake-provably-fair-verifier",
+  "version": "1.0.0",
+  "description": "Stake provably fair verifier",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "mocha --require @babel/register Tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyranRana/stake-provably-fair-verifier.git"
+  },
+  "author": "Kyran Rana",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "chai": "^4.2.0",
+    "core-js": "^3.3.6",
+    "eslint": "^6.6.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^6.2.2",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "bugs": {
+    "url": "https://github.com/KyranRana/stake-provably-fair-verifier/issues"
+  },
+  "homepage": "https://github.com/KyranRana/stake-provably-fair-verifier#readme"
+}

@@ -16,7 +16,7 @@ export default class Plinko {
    * @return {string[]} The directions.
    */
   verify(GAME_SEED_DATA) {
-    const DIRECTIONS = ['LEFT', 'RIGHT'];
+    const DIRECTIONS = ['L', 'R'];
 
     return GameSeedUtils.extractFloats(GAME_SEED_DATA, 16).map((rowIndex) =>
       DIRECTIONS[Math.floor(rowIndex * 2)]);

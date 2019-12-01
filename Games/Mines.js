@@ -17,12 +17,12 @@ export default class Mines {
    * @return {integer[]} The mines
    */
   verify(GAME_SEED_DATA) {
-    const MAX_MINES = 25;
+    const MAX_MINES = 24;
 
-    const MINES = ArrayUtils.generateArrayWithRange(1, MAX_MINES);
+    const MINES = ArrayUtils.generateArrayWithRange(0, MAX_MINES);
 
     return GameSeedUtils.extractFloats(GAME_SEED_DATA, MAX_MINES)
         .map((float, index) =>
-          MINES.splice(Math.floor(float * (MAX_MINES - index)), 1)[0]);
+          MINES.splice(Math.floor(float * (MAX_MINES - index + 1)), 1)[0]);
   }
 }

@@ -6,7 +6,8 @@ import GameSeedUtils from '../Utils/GameSeedUtils';
  */
 export default class Limbo {
   /**
-   * Verifies a limbo game for a given GAME_SEED_DATA object.
+   * Verifies a limbo game by returning the stoppage point for a given
+   * GAME_SEED_DATA object.
    *
    * @param {Object} GAME_SEED_DATA - The game seed data.
    * @param {string} GAME_SEED_DATA.serverSeed - The server seed.

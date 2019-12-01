@@ -6,7 +6,8 @@ import {sha256} from '../Utils/Sha256Utils';
  */
 export default class Crash {
   /**
-   * Verifies a game of Crash given a hash and client seed.
+   * Verifies a Crash game by returning the stoppage for a given hash
+   * and client seed.
    *
    * @param {Object} CRASH_SEED_DATA - Seed data for crash.
    * @param {string} CRASH_SEED_DATA.hash - The hash.
