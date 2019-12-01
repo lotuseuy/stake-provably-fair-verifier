@@ -73,7 +73,7 @@ export default class Cards {
    * @return {Object[]} The cards.
    */
   verifyDiamondPoker(GAME_SEED_DATA) {
-    const GEMS = ['GREEN', 'PURPLE', 'YELLOW', 'RED', 'CYAN', 'ORANGE', 'BLUE'];
+    const GEMS = ['green', 'purple', 'yellow', 'red', 'cyan', 'orange', 'blue'];
     const MAX_GEMS = 10;
 
     return GameSeedUtils.extractFloats(GAME_SEED_DATA, MAX_GEMS).map(
@@ -93,17 +93,7 @@ export default class Cards {
    * @return {object[]} The cards.
    */
   _getCards(GAME_SEED_DATA, COUNT, FISHER_YATES = false) {
-    const CARD_NUMBERS = [];
-
-    CARD_NUMBERS.push(...ArrayUtils.generateArrayWithRange(2, 10));
-    CARD_NUMBERS.push('J', 'Q', 'K', 'A');
-
-    const CARD_SUITS = ['DIAMOND', 'HEART', 'SPADE', 'CLUB'];
-    const CARDS = [];
-
-    CARD_NUMBERS.map((cardNumber) =>
-      CARD_SUITS.map((cardSuit) => CARDS.push([
-        cardNumber.toString(), cardSuit])));
+    const CARDS = ArrayUtils.generateArrayWithRange(0, 207);
 
     return GameSeedUtils.extractFloats(GAME_SEED_DATA, COUNT).map(
         (cardIndex, index) => FISHER_YATES ?

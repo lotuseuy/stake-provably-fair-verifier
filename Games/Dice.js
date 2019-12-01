@@ -6,7 +6,8 @@ import GameSeedUtils from '../Utils/GameSeedUtils';
  */
 export default class Dice {
   /**
-   * Verifies a dice roll for a given GAME_SEED_DATA object.
+   * Verifies a dice roll by returning the roll number for a given
+   * GAME_SEED_DATA object.
    *
    * @param {Object} GAME_SEED_DATA - The game seed data.
    * @param {string} GAME_SEED_DATA.serverSeed - The server seed.
