@@ -68,7 +68,7 @@ export default class Slots {
       RESULT.push(OFFSETS);
 
       rounds += (ITEMS.reduce((sum, item) =>
-        sum + (item === 'scatter'), 0) == 3) * 15;
+        sum + (item === 'scatter'), 0) >= 3) * 15;
     }
 
     return RESULT;
