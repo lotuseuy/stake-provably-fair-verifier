@@ -1,8 +1,8 @@
 {
   "name": "@cgfoundation/stake-provably-fair-verifier",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Stake provably fair verifier",
-  "main": "bundle.js",
+  "main": "bundle",
   "scripts": {
     "test": "mocha --require @babel/register Tests --recursive"
   },
@@ -13,12 +13,12 @@
   "author": "Kyran Rana",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
     "@babel/register": "^7.7.4",
     "chai": "^4.2.0",
-    "core-js": "^3.3.6",
-    "eslint": "^6.6.0",
+    "core-js": "^3.4.7",
+    "eslint": "^6.7.2",
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.2.2",
     "regenerator-runtime": "^0.13.3"
