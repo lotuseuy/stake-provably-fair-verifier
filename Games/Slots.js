@@ -87,7 +87,7 @@ export default class Slots {
   _getOffsetsForRound(GAME_SEED_DATA, ROUND) {
     return GameSeedUtils.extractFloats(GAME_SEED_DATA, ROUND * 5 + 5)
         .slice(-5)
-        .map((float, i) => 
+        .map((float, i) =>
           Math.floor(float * SLOTS_TABLE[i % 5].length));
   }
 
