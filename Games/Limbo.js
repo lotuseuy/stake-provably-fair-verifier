@@ -18,8 +18,8 @@ export default class Limbo {
   verify(GAME_SEED_DATA) {
     const MAX_MULTIPLIER = 1e8;
 
-    const FLOAT_POINT = MAX_MULTIPLIER /
-      (GameSeedUtils.extractFloat(GAME_SEED_DATA) * MAX_MULTIPLIER) * 0.99;
+    const FLOAT_POINT = MAX_MULTIPLIER / (GameSeedUtils
+        .extractFloat(GAME_SEED_DATA) * MAX_MULTIPLIER) * 0.99;
 
     return (Math.floor(FLOAT_POINT * 100) / 100).toFixed(2);
   }

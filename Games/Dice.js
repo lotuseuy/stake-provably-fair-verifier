@@ -16,7 +16,7 @@ export default class Dice {
    * @return {float} The float.
    */
   verify(GAME_SEED_DATA) {
-    return (Math.floor(GameSeedUtils.extractFloat(GAME_SEED_DATA) * 10001) /
-      100).toFixed(2);
+    return (Math.floor(GameSeedUtils
+        .extractFloat(GAME_SEED_DATA) * 10001) / 100).toFixed(2);
   }
 }
